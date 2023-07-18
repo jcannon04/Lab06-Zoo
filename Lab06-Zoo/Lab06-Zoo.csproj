@@ -8,4 +8,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="ConcreteClasses\" />
+    <None Remove="AbstractClasses\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ConcreteClasses\" />
+    <Folder Include="AbstractClasses\" />
+  </ItemGroup>
 </Project>
