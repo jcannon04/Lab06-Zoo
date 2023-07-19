@@ -11,9 +11,11 @@
   <ItemGroup>
     <None Remove="ConcreteClasses\" />
     <None Remove="AbstractClasses\" />
+    <None Remove="Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ConcreteClasses\" />
     <Folder Include="AbstractClasses\" />
+    <Folder Include="Interfaces\" />
   </ItemGroup>
 </Project>

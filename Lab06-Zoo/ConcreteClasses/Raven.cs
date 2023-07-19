@@ -6,7 +6,6 @@ namespace Lab06_Zoo.Classes
 	{
         //overrides and uses virtual and abstract properties and methods of parent class
         public new string Sound = "cawww";
-        public new string FavFood = "roadkill";
         public override string Name { get; set; } = "Squawky McBeak";
         public override string Color { get; set; } = "Black";
 
@@ -30,6 +29,12 @@ namespace Lab06_Zoo.Classes
         {
 
             Console.WriteLine($"{Name} dreams about eating {FavFood}.");
+        }
+
+        public new string Hunt()
+        {
+            // Using the Name property from the Animal class (which Bird inherits from)
+            return $"{Name} hunts for {FavFood}";
         }
 
     }
