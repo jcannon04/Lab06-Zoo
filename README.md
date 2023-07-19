@@ -1,4 +1,4 @@
-﻿# Lab06 - Zoo Console Application
+﻿# Lab06 - Zoo & Lab07 - Interfaces 
 
 ## Overview
 The Lab06 - Zoo Console Application is a simple yet engaging program that models a zoo. It demonstrates the fundamental principles of Object-Oriented Programming (OOP) by utilizing inheritance, polymorphism, encapsulation, and abstraction to create a hierarchy of animal classes.

@@ -22,6 +22,7 @@ class Program
 
         Raven squaks = new Raven();
         squaks.Speak();
+        squaks.Hunt();
         squaks.Eat();
         squaks.Sleep();
         squaks.Move();

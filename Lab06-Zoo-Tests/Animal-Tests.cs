@@ -1,6 +1,7 @@
 ﻿
 using Xunit;
 using Lab06_Zoo.Classes;
+using Lab06_Zoo.AbstractClasses;
 
 namespace Lab06_Zoo.Tests
 {
@@ -146,6 +147,31 @@ namespace Lab06_Zoo.Tests
 
             // Assert
             Assert.Equal("cawww", actualSound);
+        }
+
+        [Fact]
+        public void RavenHunt_ShouldReturnCorrectMessage()
+        {
+            // Arrange
+            string name = "Corvus";
+            Raven raven = new Raven(name);
+
+            // Act
+            string result = raven.Hunt();
+
+            // Assert
+            string expected = $"{name} hunts for worms";
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void Raven_ShouldBeAnAnimal()
+        {
+            // Arrange & Act
+            Raven raven = new Raven();
+
+            // Assert
+            Assert.IsAssignableFrom<Animal>(raven);
         }
 
     }
